@@ -6,6 +6,11 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+   webpack: (config) => {
+       config.resolve.alias.canvas = false;
+    
+       return config;
+     },
   webpack: (config) => {
     return config
   },
